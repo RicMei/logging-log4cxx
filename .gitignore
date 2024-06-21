@@ -34,3 +34,4 @@ src/test/resources/output/
 target/
 
 *.user
+/cmake-build-debug

@@ -61,6 +61,7 @@
 #include <log4cxx/rolling/rollingfileappender.h>
 #include <log4cxx/rolling/sizebasedtriggeringpolicy.h>
 #include <log4cxx/rolling/timebasedrollingpolicy.h>
+#include <log4cxx/rolling/sizeandtimebasedrollingpolicy.h>
 
 #include <log4cxx/xml/domconfigurator.h>
 #include <log4cxx/propertyconfigurator.h>
@@ -193,6 +194,7 @@ void Class::registerClasses()
 	LOG4CXX_NS::rolling::RollingFileAppender::registerClass();
 	LOG4CXX_NS::rolling::SizeBasedTriggeringPolicy::registerClass();
 	LOG4CXX_NS::rolling::TimeBasedRollingPolicy::registerClass();
+	LOG4CXX_NS::rolling::SizeAndTimeBasedRollingPolicy::registerClass();
 	LOG4CXX_NS::rolling::ManualTriggeringPolicy::registerClass();
 	LOG4CXX_NS::rolling::FixedWindowRollingPolicy::registerClass();
 	LOG4CXX_NS::rolling::FilterBasedTriggeringPolicy::registerClass();
