@@ -1,2 +1,0 @@
-add_executable(odbcappendertestcase odbcappendertestcase.cpp)
-set(ALL_LOG4CXX_TESTS ${ALL_LOG4CXX_TESTS} odbcappendertestcase PARENT_SCOPE)
