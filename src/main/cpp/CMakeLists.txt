@@ -205,6 +205,7 @@ target_sources(log4cxx
   writerappender.cpp
   xmllayout.cpp
   zipcompressaction.cpp
+  sizeandtimebasedrollingpolicy.cpp
   ${extra_classes}
 )
 

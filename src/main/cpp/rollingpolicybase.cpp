@@ -77,6 +77,10 @@ void RollingPolicyBase::setOption(const LogString& option, const LogString& valu
 	{
 		m_priv->createIntermediateDirectories = OptionConverter::toBoolean(value, false);
 	}
+	else {
+		LogLog::warn(LOG4CXX_STR("Failed to setting option name, =[") +
+			option + LOG4CXX_STR("], value=[") + value + LOG4CXX_STR("]") + "resion: no property defined in " + getStaticClass().toString());
+	}
 }
 
 void RollingPolicyBase::setFileNamePattern(const LogString& fnp)
